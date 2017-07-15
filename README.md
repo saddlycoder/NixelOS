@@ -1,2 +1,2 @@
 # NixelOS
-NixelOS - ОС написанная на C++,C и ассемблере
+NixelOS - OS Written in C and Assembly Laungage
