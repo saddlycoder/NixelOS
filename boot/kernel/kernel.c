@@ -6,8 +6,7 @@
   (C) DiamondSoft (R) NixelOS 2017 - 2018 y.
   
 */
-
-#include "IxDraw/print.h"
+#include "IxDraw/NixelDraw.h"
 
 void kmain(void)
 {
