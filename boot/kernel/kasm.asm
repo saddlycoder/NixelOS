@@ -1,16 +1,34 @@
-;;kernel.asm
-bits 32			;nasm directive - 32 bit
+global loader
+extern _kmain
+MODULEALIGN equ 1<<0
+MEMINFO equ 1<<1
+FLAGS equ  MODULEALIGN | MEMINFO
+MAGIC equ 0x1BADB002
+CHECKSUM equ -(MAGIC + FLAGS)
+
 section .text
+align 4
+MultiBootHeader:
+dd MAGIC
+dd FLAGS
+dd CHECKSUM
 
-global start
-extern kmain	        ;kmain is defined in the c file
+STACKSIZE equ 0x4000
 
-start:
-  cli 			;block interrupts
-  mov esp, stack_space	;set stack pointer
-  call kmain
-  hlt		 	;halt the CPU
-
+loader:
+   mov esp,stack+STACKSIZE
+   push eax
+   push ebx
+   
+   jmp _kmain
+   
+   cli
+   
+hang:
+   hlt
+   jmp hang
+   
 section .bss
-resb 8192		;8KB for stack
-stack_space:
+align 4
+stack:
+ resb STACKSIZE

@@ -3,7 +3,7 @@
 */
 void kmain(void)
 {
-	const char *str = "my first kernel";
+	const char *str = "HEY!HELLO KERNEL C!";
 	char *vidptr = (char*)0xb8000; 	//video mem begins here.
 	unsigned int i = 0;
 	unsigned int j = 0;
@@ -29,5 +29,5 @@ void kmain(void)
 		++j;
 		i = i + 2;
 	}
-	return;
+	while(1);
 }
