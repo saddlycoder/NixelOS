@@ -10,5 +10,5 @@
 #define PRINT_H
 
 void print(char* message, int color);
-
+void update_cursor(int row, int col);
 #endif

@@ -8,6 +8,7 @@
 */
 #include "print.h"
 
+
 void print(char* message, int color)
 {
 	char* mem = (char*)(0xb8000);
@@ -20,3 +21,4 @@ void print(char* message, int color)
 		mem++;
 	}
 }
+

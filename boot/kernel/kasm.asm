@@ -13,13 +13,14 @@ dd MAGIC
 dd FLAGS
 dd CHECKSUM
 
+
 STACKSIZE equ 0x4000
 
 loader:
    mov esp,stack+STACKSIZE
    push eax
    push ebx
-   
+	
    jmp _kmain
    
    cli
@@ -28,6 +29,7 @@ hang:
    hlt
    jmp hang
    
+
 section .bss
 align 4
 stack:
