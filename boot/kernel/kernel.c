@@ -21,9 +21,9 @@ void kmain(void)
 	//--------------------------MAIN--------------------//
     clear();
 	terminal_initialize();
-	print("NixelOS kernel v1.0",0x2);
 	
-    kbd_wap(0x2);
+	command_init();
+    
 	/* This end of kernel
        userinit initialising	
 	   system to work

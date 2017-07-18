@@ -25,7 +25,7 @@ void kbd_led_handling(int ledstatus){
   outb(0x60,ledstatus);
 }
 
-void kbd_wap(int color)
+void kbd_wap()
 {
 
     uint8_t i = 0;
@@ -37,191 +37,189 @@ void kbd_wap(int color)
             switch(inb(0x60))
             { 
       /*case 1:
-                printch("(char)27);           Escape button
+                terminal_putcharch('(char)27);           Escape button
                 buffstr[i] = (char)27;
                 i++;
                 break;*/
         case 2:
-                print("1",color);
+                terminal_putchar('1');
                 break;
 		
         case 3:
-                print("2",color);
+                terminal_putchar('2');
                 break;
 		
         case 4:
-                print("3",color);
+                terminal_putchar('3',color);
                 break;
         case 5:
-                print("4",color);
+                terminal_putchar('4',color);
                 break;
         case 6:
-                print("5",color);
+                terminal_putchar('5',color);
                 break;
         case 7:
-                print("6",color);
+                terminal_putchar('6',color);
                 break;
         case 8:
-                print("7",color);
+                terminal_putchar('7',color);
                 break;
         case 9:
-                print("8",color);
+                terminal_putchar('8',color);
                 break;
         case 10:
-                print("9",color);
+                terminal_putchar('9',color);
                 break;
         case 11:
-                print("0",color);
+                terminal_putchar('0',color);
                 break;
         case 12:
-                print("-",color);
+                terminal_putchar('-',color);
                 break;
         case 13:
-                print("=",color);
+                terminal_putchar('=',color);
                 break;
         case 14:
-                print("/",color);
+                terminal_putchar('/',color);
                 break;
        /* case 15:
-                printch("\t");          Tab button
+                terminal_putcharch('\t');          Tab button
                 break; */
         case 16:
-                print("q",color);
+                terminal_putchar('q',color);
                 break;
         case 17:
-                print("w",color);
+                terminal_putchar('w',color);
                 break;
         case 18:
-                print("e",color);
+                terminal_putchar('e',color);
                 break;
         case 19:
-                print("r",color);
+                terminal_putchar('r',color);
                 break;
         case 20:
-                print("t",color);
+                terminal_putchar('t',color);
                 break;
         case 21:
-                print("y",color);
+                terminal_putchar('y',color);
                 break;
         case 22:
-                print("u",color);
+                terminal_putchar('u',color);
                 break;
         case 23:
-                print("i",color);
+                terminal_putchar('i',color);
                 break;
         case 24:
-                print("o",color);
+                terminal_putchar('o',color);
                 break;
         case 25:
-                print("p",color);
+                terminal_putchar('p',color);
                 break;
         case 26:
-                print("[",color);
+                terminal_putchar('[',color);
                 break;
         case 27:
-                print("]",color);
+                terminal_putchar(']',color);
                 break;
         //case 28:
-               // printch("\n");
-               // buffstr[i] = "\n";
+               // terminal_putcharch('\n');
+               // buffstr[i] = '\n';
                   //i++;
                //reading = 0;
                // break;
       /*  case 29:
-                printch("q");           Left Control
-                buffstr[i] = "q";
+                terminal_putcharch('q');           Left Control
+                buffstr[i] = 'q';
                 i++;
                 break; */
         case 30:
-                print("a",color);
+                terminal_putchar('a',color);
                 break;
         case 31:
-                print("s",color);
+                terminal_putchar('s',color);
                 break;
         case 32:
-                print("d",color);
+                terminal_putchar('d',color);
                 break;
         case 33:
-                print("f",color);
+                terminal_putchar('f',color);
                 break;
         case 34:
-                print("g",color);
+                terminal_putchar('g',color);
                 break;
         case 35:
-                print("h",color);
+                terminal_putchar('h',color);
                 break;
         case 36:
-                print("j",color);
+                terminal_putchar('j',color);
                 break;
         case 37:
-                print("k",color);
+                terminal_putchar('k',color);
                 break;
         case 38:
-                print("l",color);
+                terminal_putchar('l',color);
                 break;
         case 39:
-                print(";",color);
+                terminal_putchar(';',color);
                 break;
         case 40:
-                print((char)44,color);               //   Single quote (")
+                terminal_putchar((char)44,color);               //   Single quote (')
                 break;
         case 41:
-                print((char)44,color);               // Back tick (`)
+                terminal_putchar((char)44,color);               // Back tick (`)
                 break;
      /* case 42:                                 Left shift 
-                printch("q");
-                buffstr[i] = "q";
+                terminal_putcharch('q');
+                buffstr[i] = 'q';
                 i++;
                 break; */
         case 43:                                 // (< for somekeyboards)   
-                print((char)92,color);
+                terminal_putchar((char)92,color);
                 break;
         case 44:
-                print("z",color);
+                terminal_putchar('z',color);
                 break;
         case 45:
-                print("x",color);
+                terminal_putchar('x',color);
                 break;
         case 46:
-                print("c",color);
+                terminal_putchar('c',color);
                 break;
         case 47:
-                print("v",color);
+                terminal_putchar('v',color);
                 break;                
         case 48:
-                print("b",color);
+                terminal_putchar('b',color);
                 break;               
         case 49:
-                print("n",color);
+                terminal_putchar('n',color);
                 break;                
         case 50:
-                print("m",color);
+                terminal_putchar('m',color);
                 break;               
         case 51:
-                print(",",color);
+                terminal_putchar(',',color);
                 break;                
         case 52:
-                print(".",color);
+                terminal_putchar('.',color);
                 break;            
         case 53:
-                print("/",color);
+                terminal_putchar('/',color);
                 break;            
         case 54:
-                print(".",color);
+                terminal_putchar('.',color);
                 break;            
         case 55:
-                print("/",color);
+                terminal_putchar('/',color);
                 break;            
       /*case 56:
                 printch(' ');           Right shift
                 buffstr[i] = ' ';
                 i++;
-                break;          
+                break; */
         case 57:
-                printch(' ');
-                buffstr[i] = ' ';
-                i++;
-	            break;*/
+                terminal_putchar(' ');
+	            break;
             }
         }
     }
