@@ -11,6 +11,6 @@
 
 void kmain(void);
 
-void userinit(int USMOD);
+
 
 #endif

@@ -50,76 +50,76 @@ void kbd_wap()
                 break;
 		
         case 4:
-                terminal_putchar('3',color);
+                terminal_putchar('3');
                 break;
         case 5:
-                terminal_putchar('4',color);
+                terminal_putchar('4');
                 break;
         case 6:
-                terminal_putchar('5',color);
+                terminal_putchar('5');
                 break;
         case 7:
-                terminal_putchar('6',color);
+                terminal_putchar('6');
                 break;
         case 8:
-                terminal_putchar('7',color);
+                terminal_putchar('7');
                 break;
         case 9:
-                terminal_putchar('8',color);
+                terminal_putchar('8');
                 break;
         case 10:
-                terminal_putchar('9',color);
+                terminal_putchar('9');
                 break;
         case 11:
-                terminal_putchar('0',color);
+                terminal_putchar('0');
                 break;
         case 12:
-                terminal_putchar('-',color);
+                terminal_putchar('-');
                 break;
         case 13:
-                terminal_putchar('=',color);
+                terminal_putchar('=');
                 break;
         case 14:
-                terminal_putchar('/',color);
+                terminal_putchar('/');
                 break;
        /* case 15:
                 terminal_putcharch('\t');          Tab button
                 break; */
         case 16:
-                terminal_putchar('q',color);
+                terminal_putchar('q');
                 break;
         case 17:
-                terminal_putchar('w',color);
+                terminal_putchar('w');
                 break;
         case 18:
-                terminal_putchar('e',color);
+                terminal_putchar('e');
                 break;
         case 19:
-                terminal_putchar('r',color);
+                terminal_putchar('r');
                 break;
         case 20:
-                terminal_putchar('t',color);
+                terminal_putchar('t');
                 break;
         case 21:
-                terminal_putchar('y',color);
+                terminal_putchar('y');
                 break;
         case 22:
-                terminal_putchar('u',color);
+                terminal_putchar('u');
                 break;
         case 23:
-                terminal_putchar('i',color);
+                terminal_putchar('i');
                 break;
         case 24:
-                terminal_putchar('o',color);
+                terminal_putchar('o');
                 break;
         case 25:
-                terminal_putchar('p',color);
+                terminal_putchar('p');
                 break;
         case 26:
-                terminal_putchar('[',color);
+                terminal_putchar('[');
                 break;
         case 27:
-                terminal_putchar(']',color);
+                terminal_putchar(']');
                 break;
         //case 28:
                // terminal_putcharch('\n');
@@ -133,40 +133,40 @@ void kbd_wap()
                 i++;
                 break; */
         case 30:
-                terminal_putchar('a',color);
+                terminal_putchar('a');
                 break;
         case 31:
-                terminal_putchar('s',color);
+                terminal_putchar('s');
                 break;
         case 32:
-                terminal_putchar('d',color);
+                terminal_putchar('d');
                 break;
         case 33:
-                terminal_putchar('f',color);
+                terminal_putchar('f');
                 break;
         case 34:
-                terminal_putchar('g',color);
+                terminal_putchar('g');
                 break;
         case 35:
-                terminal_putchar('h',color);
+                terminal_putchar('h');
                 break;
         case 36:
-                terminal_putchar('j',color);
+                terminal_putchar('j');
                 break;
         case 37:
-                terminal_putchar('k',color);
+                terminal_putchar('k');
                 break;
         case 38:
-                terminal_putchar('l',color);
+                terminal_putchar('l');
                 break;
         case 39:
-                terminal_putchar(';',color);
+                terminal_putchar(';');
                 break;
         case 40:
-                terminal_putchar((char)44,color);               //   Single quote (')
+                terminal_putchar((char)44);               //   Single quote (')
                 break;
         case 41:
-                terminal_putchar((char)44,color);               // Back tick (`)
+                terminal_putchar((char)44);               // Back tick (`)
                 break;
      /* case 42:                                 Left shift 
                 terminal_putcharch('q');
@@ -174,43 +174,43 @@ void kbd_wap()
                 i++;
                 break; */
         case 43:                                 // (< for somekeyboards)   
-                terminal_putchar((char)92,color);
+                terminal_putchar((char)92);
                 break;
         case 44:
-                terminal_putchar('z',color);
+                terminal_putchar('z');
                 break;
         case 45:
-                terminal_putchar('x',color);
+                terminal_putchar('x');
                 break;
         case 46:
-                terminal_putchar('c',color);
+                terminal_putchar('c');
                 break;
         case 47:
-                terminal_putchar('v',color);
+                terminal_putchar('v');
                 break;                
         case 48:
-                terminal_putchar('b',color);
+                terminal_putchar('b');
                 break;               
         case 49:
-                terminal_putchar('n',color);
+                terminal_putchar('n');
                 break;                
         case 50:
-                terminal_putchar('m',color);
+                terminal_putchar('m');
                 break;               
         case 51:
-                terminal_putchar(',',color);
+                terminal_putchar(',');
                 break;                
         case 52:
-                terminal_putchar('.',color);
+                terminal_putchar('.');
                 break;            
         case 53:
-                terminal_putchar('/',color);
+                terminal_putchar('/');
                 break;            
         case 54:
-                terminal_putchar('.',color);
+                terminal_putchar('.');
                 break;            
         case 55:
-                terminal_putchar('/',color);
+                terminal_putchar('/');
                 break;            
       /*case 56:
                 printch(' ');           Right shift
