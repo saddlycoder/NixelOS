@@ -1,1 +1,1 @@
-nixelos
+The Core of OS
