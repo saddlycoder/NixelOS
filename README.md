@@ -1,2 +1,5 @@
 # NixelOS
-NixelOS - OS Written in C and Assembly Laungage
+
+NixelOS - OS written  in C and Assembly Laungage
+
+Created with ❤️ by c4x team 😊
